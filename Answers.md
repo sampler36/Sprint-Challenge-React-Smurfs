@@ -7,7 +7,7 @@
 1.  What does CRUD stand for?
     `Crud is a short term for Create Read Update and Delete`
 
-1.  Which HTTP methods can be mapped to the CRUD acronym that we use when interfacing with APIs/Servers.
+1.  Which HTTP methods can be mapped to the CRUD acronym   that we use when interfacing with APIs/Servers.
      `Create -> PUT with a new URI and it POST to a base   URI returning a newly created URI || Read   -> GET ||Update -> PUT with an existing URI || Delete -> DELETE`
 
 1.  Mention three tools we can use to make AJAX requests
