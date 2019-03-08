@@ -5,6 +5,9 @@ import Smurfs from './components/Smurfs';
 import axios from 'axios';
 import Nav from './components/Nav';
 
+import {BrowserRouter as Router, Route} from 'react-router-dom';
+
+
 const theSmurfsURL = 'http://localhost:3333/smurfs';
 
 class App extends Component {
@@ -25,9 +28,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-      <Nav />
-        <SmurfForm />
-        <Smurfs smurfs={this.state.smurfs} />
+        <Nav />
+          { 
+            <img src={require('./components/smurf.jpg')} />
+          }
       </div>
     );
   }

@@ -1,17 +1,21 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import SmurfForm from './components/SmurfForm';
-import Smurfs from './components/Smurfs';
+import { Link } from "react-router-dom";
 
 const Nav = () => {
     return (
-      <Router>
-      <div>
-       <Route exact path="/" component={Smurfs} />
-       <Route path="/smurf-form" component={SmurfForm} />
+        <div>
+        <div className="App">
+          <h1>Smurf Village</h1>
+          <div className="nav">
+            <Link className="link" to='/'>Home</Link>
+            <Link className="link"  to='/smurf-form'>Smurf-Form</Link>
+            <Link className="link"  to='/smurfs'>Smurfs</Link>
+          </div>
+        </div>
       </div>
-      </Router>
+    
     );
   }
+  
 
   export default Nav;
