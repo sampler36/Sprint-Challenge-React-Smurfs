@@ -20,7 +20,7 @@ class App extends Component {
     axios.get(theSmurfsURL)
          .then(res => {this.setState(() => ({smurfs: res.data}));})
   }
-  
+
   render() {
     return (
       <div className="App">
