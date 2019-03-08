@@ -3,6 +3,7 @@ import './App.css';
 import SmurfForm from './components/SmurfForm';
 import Smurfs from './components/Smurfs';
 import axios from 'axios';
+import Nav from './components/Nav';
 
 const theSmurfsURL = 'http://localhost:3333/smurfs';
 
@@ -24,6 +25,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+      <Nav />
         <SmurfForm />
         <Smurfs smurfs={this.state.smurfs} />
       </div>
