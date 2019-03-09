@@ -12,3 +12,12 @@
   font-family: 'Merienda', cursive;
 
 }
+
+.card {
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+  
+
+}

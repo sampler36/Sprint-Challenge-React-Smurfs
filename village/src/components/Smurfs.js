@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import Smurf from './Smurf';
+import Card from 'react-bootstrap/Button';
 
 class Smurfs extends Component {
   render() {
     return (
       <div className="App">
-        <ul >
+       
+        <ul className="card">
           {this.props.smurfs.map(smurf => {
             return (
               <Smurf 
@@ -18,7 +20,7 @@ class Smurfs extends Component {
             );
           })}
         </ul>
-      </div>
+    </div>
     );
   }
 }
