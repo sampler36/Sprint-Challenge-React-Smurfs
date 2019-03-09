@@ -4,7 +4,7 @@ import SmurfForm from './components/SmurfForm';
 import Smurfs from './components/Smurfs';
 import axios from 'axios';
 import Nav from './components/Nav';
-
+import Home from './components/Home';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 
 
@@ -29,10 +29,14 @@ class App extends Component {
     return (
       <div className="App">
         <Nav />
-          { 
-            <img src={require('./components/smurf.jpg')} />
-          }
+         <Route className="form" path='/home' component={Home} />
+
+         <Route className="form" path='/smurf-form' component={SmurfForm} />
+
+         <Route exact path='/smurfs' render={props => <Smurfs  smurfs={this.state.smurfs} />} />
       </div>
+      
+
     );
   }
 }
