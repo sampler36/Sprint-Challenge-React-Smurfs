@@ -26,7 +26,8 @@ class App extends Component {
   }
 
   render() {
-    return (
+    return ( 
+      <Router> 
       <div className="App">
         <Nav />
          <Route className="form" path='/home' component={Home} />
@@ -36,7 +37,7 @@ class App extends Component {
          <Route exact path='/smurfs' render={props => <Smurfs  smurfs={this.state.smurfs} />} />
       </div>
       
-
+      </Router>
     );
   }
 }
