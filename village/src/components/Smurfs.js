@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Smurf from './Smurf';
-import Card from 'react-bootstrap/Button';
+
 
 class Smurfs extends Component {
   render() {
